@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather-page</title>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script  defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <input type="text" placeholder="Heyy! I provide weather details" spellcheck="false" />
+        <button>
+            <lord-icon class="search-icon"
+                src="https://cdn.lordicon.com/jtkfemwz.json"
+                trigger="hover"
+                stroke="bold"></lord-icon>
+            </lord-icon>
+        </button>
+      </div>
+      <div id="matchList" ></div>
+      <div class="error"><p>
+        Invalid city name!
+      </p></div>
+
+      <div class="weather">
+        <img src="./images/rain.png" class="weather-icon icon" alt="This is an image" srcset="">
+        <h1 class="temp">
+          22°C
+        </h1>
+        <h2 class="city">
+          Kanpur
+        </h2>
+        <div class="details">
+          <div class="col">
+            <img src="images/humidity.png" class="icon humidity-icon" alt="" srcset="">
+            <div class="icon-text">
+              <p>Humidity</p>
+              <p class="humidity">50%</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="images/wind.png" class="wind-icon icon" srcset="">
+            <div class="icon-text">
+              <p>Wind Speed</p>
+              <p class="wind" >15km/hr</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
